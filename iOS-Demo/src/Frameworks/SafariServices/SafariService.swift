@@ -1,22 +1,19 @@
 //
-//  FrameworkService.swift
+//  SafariService.swift
 //  iOS-Demo
 //
-//  Created by minya on 2018/3/20.
+//  Created by hanhui on 2018/3/21.
 //  Copyright © 2018年 xmu. All rights reserved.
 //
 
 import Foundation
 import RxSwift
 
-class FrameworkService: ListService {
-    
-    required init() {}
-
+final class SafariService: ListService {
     var items: Observable<[ListItem]> {
         get {
             return Observable.just([
-                ListItem(title: "Safari", coordinator: ListCoordinator<SafariService>())
+                ListItem(title: "Safari ViewController", coordinator: SafariViewCoordinator())
             ])
         }
     }

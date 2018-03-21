@@ -19,6 +19,7 @@ class ListCoordinator<S: ListService>: NavigationCoordinator {
         
         viewModel.didSelectedItem.subscribe(onNext: { [weak self] item in
             
+            item.coordinator.navigationController = self?.navigationController
             _ = self?.coordinate(to: item.coordinator)
             
         }).disposed(by: disposeBag)
