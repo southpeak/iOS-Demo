@@ -36,6 +36,16 @@
 		E1C870D0205A3BDB0029D82A /* RootCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C870CF205A3BDB0029D82A /* RootCoordinator.swift */; };
 		E1C870E0205A3FEB0029D82A /* ListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C870DF205A3FEB0029D82A /* ListItem.swift */; };
 		E1C870E2205A406A0029D82A /* RootService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C870E1205A406A0029D82A /* RootService.swift */; };
+		E1F66CC52061F404004CA444 /* SafariService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F66CC42061F404004CA444 /* SafariService.swift */; };
+		E1FA6BB22061F70700577956 /* SafariViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FA6BB02061F70700577956 /* SafariViewController.swift */; };
+		E1FA6BB32061F70700577956 /* SafariViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1FA6BB12061F70700577956 /* SafariViewController.xib */; };
+		E1FA6BB52061F73D00577956 /* SafariViewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FA6BB42061F73D00577956 /* SafariViewCoordinator.swift */; };
+		E1FA6BBA20621F9000577956 /* NetworkExtensionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FA6BB920621F9000577956 /* NetworkExtensionService.swift */; };
+		E1FA6BBD206225A800577956 /* HotspotConfigurationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FA6BBC206225A800577956 /* HotspotConfigurationService.swift */; };
+		E1FA6BC0206229C300577956 /* HotspotWEPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FA6BBE206229C300577956 /* HotspotWEPViewController.swift */; };
+		E1FA6BC1206229C300577956 /* HotspotWEPViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1FA6BBF206229C300577956 /* HotspotWEPViewController.xib */; };
+		E1FA6BC3206229EF00577956 /* HotspotWEPCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FA6BC2206229EF00577956 /* HotspotWEPCoordinator.swift */; };
+		E1FA6BC520622A2000577956 /* HotspotWEPViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FA6BC420622A2000577956 /* HotspotWEPViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,6 +106,16 @@
 		E1C870CF205A3BDB0029D82A /* RootCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootCoordinator.swift; sourceTree = "<group>"; };
 		E1C870DF205A3FEB0029D82A /* ListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItem.swift; sourceTree = "<group>"; };
 		E1C870E1205A406A0029D82A /* RootService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootService.swift; sourceTree = "<group>"; };
+		E1F66CC42061F404004CA444 /* SafariService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariService.swift; sourceTree = "<group>"; };
+		E1FA6BB02061F70700577956 /* SafariViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariViewController.swift; sourceTree = "<group>"; };
+		E1FA6BB12061F70700577956 /* SafariViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SafariViewController.xib; sourceTree = "<group>"; };
+		E1FA6BB42061F73D00577956 /* SafariViewCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariViewCoordinator.swift; sourceTree = "<group>"; };
+		E1FA6BB920621F9000577956 /* NetworkExtensionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkExtensionService.swift; sourceTree = "<group>"; };
+		E1FA6BBC206225A800577956 /* HotspotConfigurationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotspotConfigurationService.swift; sourceTree = "<group>"; };
+		E1FA6BBE206229C300577956 /* HotspotWEPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotspotWEPViewController.swift; sourceTree = "<group>"; };
+		E1FA6BBF206229C300577956 /* HotspotWEPViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HotspotWEPViewController.xib; sourceTree = "<group>"; };
+		E1FA6BC2206229EF00577956 /* HotspotWEPCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotspotWEPCoordinator.swift; sourceTree = "<group>"; };
+		E1FA6BC420622A2000577956 /* HotspotWEPViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotspotWEPViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +162,8 @@
 		E10247B0206106A200652B24 /* SafariServices */ = {
 			isa = PBXGroup;
 			children = (
+				E1FA6BAF2061F67A00577956 /* SafariViewController */,
+				E1F66CC42061F404004CA444 /* SafariService.swift */,
 			);
 			path = SafariServices;
 			sourceTree = "<group>";
@@ -162,6 +184,7 @@
 		E16382C8205F7D210007D02F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E1FA6BB820621F2B00577956 /* NetworkExtension */,
 				E10247B0206106A200652B24 /* SafariServices */,
 				E10BAF052061406300E51765 /* FrameworkService.swift */,
 			);
@@ -288,6 +311,37 @@
 			children = (
 			);
 			path = common;
+			sourceTree = "<group>";
+		};
+		E1FA6BAF2061F67A00577956 /* SafariViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E1FA6BB02061F70700577956 /* SafariViewController.swift */,
+				E1FA6BB12061F70700577956 /* SafariViewController.xib */,
+				E1FA6BB42061F73D00577956 /* SafariViewCoordinator.swift */,
+			);
+			path = SafariViewController;
+			sourceTree = "<group>";
+		};
+		E1FA6BB820621F2B00577956 /* NetworkExtension */ = {
+			isa = PBXGroup;
+			children = (
+				E1FA6BBB2062259000577956 /* Hotspot */,
+				E1FA6BB920621F9000577956 /* NetworkExtensionService.swift */,
+			);
+			path = NetworkExtension;
+			sourceTree = "<group>";
+		};
+		E1FA6BBB2062259000577956 /* Hotspot */ = {
+			isa = PBXGroup;
+			children = (
+				E1FA6BBC206225A800577956 /* HotspotConfigurationService.swift */,
+				E1FA6BBE206229C300577956 /* HotspotWEPViewController.swift */,
+				E1FA6BBF206229C300577956 /* HotspotWEPViewController.xib */,
+				E1FA6BC2206229EF00577956 /* HotspotWEPCoordinator.swift */,
+				E1FA6BC420622A2000577956 /* HotspotWEPViewModel.swift */,
+			);
+			path = Hotspot;
 			sourceTree = "<group>";
 		};
 		ED37936D56FA7A087904F7E7 /* Frameworks */ = {
@@ -424,7 +478,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E1678F87205A23E8001EFFB8 /* LaunchScreen.storyboard in Resources */,
+				E1FA6BB32061F70700577956 /* SafariViewController.xib in Resources */,
 				E1678F84205A23E8001EFFB8 /* Assets.xcassets in Resources */,
+				E1FA6BC1206229C300577956 /* HotspotWEPViewController.xib in Resources */,
 				E10247B42061112E00652B24 /* ListViewController.xib in Resources */,
 				E1678F82205A23E8001EFFB8 /* Main.storyboard in Resources */,
 			);
@@ -568,23 +624,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1FA6BB52061F73D00577956 /* SafariViewCoordinator.swift in Sources */,
 				E1C870E2205A406A0029D82A /* RootService.swift in Sources */,
 				E1C870C2205A32D30029D82A /* Coordinator.swift in Sources */,
+				E1FA6BB22061F70700577956 /* SafariViewController.swift in Sources */,
+				E1FA6BBA20621F9000577956 /* NetworkExtensionService.swift in Sources */,
 				E10247B32061112E00652B24 /* ListViewController.swift in Sources */,
 				E1678F7F205A23E8001EFFB8 /* ViewController.swift in Sources */,
+				E1F66CC52061F404004CA444 /* SafariService.swift in Sources */,
 				E16AEA60205B6CE000ACA380 /* ListService.swift in Sources */,
 				E16AEA6C205B9B1300ACA380 /* Validatable.swift in Sources */,
 				E10BAF062061406300E51765 /* FrameworkService.swift in Sources */,
 				E1678F7D205A23E8001EFFB8 /* AppDelegate.swift in Sources */,
 				E1C870C4205A34460029D82A /* Mi.swift in Sources */,
+				E1FA6BBD206225A800577956 /* HotspotConfigurationService.swift in Sources */,
 				E10247B92061148800652B24 /* ListCoordinator.swift in Sources */,
 				E1C870CC205A3B5B0029D82A /* AppCoordinator.swift in Sources */,
 				E1C870CA205A39260029D82A /* ModalCoordinator.swift in Sources */,
+				E1FA6BC3206229EF00577956 /* HotspotWEPCoordinator.swift in Sources */,
 				E1C870C8205A38B30029D82A /* NavigationCoordinator.swift in Sources */,
 				E1C870E0205A3FEB0029D82A /* ListItem.swift in Sources */,
 				E1C870D0205A3BDB0029D82A /* RootCoordinator.swift in Sources */,
 				E16AEA6A205B928600ACA380 /* ValidationService.swift in Sources */,
+				E1FA6BC0206229C300577956 /* HotspotWEPViewController.swift in Sources */,
 				E1C870BC205A26070029D82A /* CoordinatorType.swift in Sources */,
+				E1FA6BC520622A2000577956 /* HotspotWEPViewModel.swift in Sources */,
 				E10247B6206111B600652B24 /* ListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
