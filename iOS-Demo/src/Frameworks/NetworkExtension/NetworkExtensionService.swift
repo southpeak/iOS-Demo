@@ -1,5 +1,5 @@
 //
-//  SafariService.swift
+//  NetworkExtensionService.swift
 //  iOS-Demo
 //
 //  Created by minya on 2018/3/21.
@@ -9,14 +9,14 @@
 import Foundation
 import RxSwift
 
-final class SafariService: ListService {
+class NetworkExtensionService: ListService {
     
     required init() {}
     
     var items: Observable<[ListItem]> {
         get {
             return Observable.just([
-                ListItem(title: "Safari ViewController", coordinator: SafariViewCoordinator())
+                ListItem(title: "Hotspot Configuration (iOS 11+)", coordinator: ListCoordinator<HotspotConfigurationService>())
             ])
         }
     }

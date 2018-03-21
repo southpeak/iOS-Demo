@@ -1,5 +1,5 @@
 //
-//  SafariViewCoordinator.swift
+//  HotspotWEPCoordinator.swift
 //  iOS-Demo
 //
 //  Created by minya on 2018/3/21.
@@ -9,11 +9,14 @@
 import Foundation
 import RxSwift
 
-class SafariViewCoordinator: NavigationCoordinator {
-
+class HotspotWEPCoordinator: NavigationCoordinator {
+    
     override func start() -> Observable<Void> {
         
-        let controller = SafariViewController(nibName: "SafariViewController", bundle: nil)
+        let controller = HotspotWEPViewController(nibName: "HotspotWEPViewController", bundle: nil)
+        let viewModel = HotspotWEPViewModel()
+        
+        controller.viewModel = viewModel
         
         self.navigationController?.pushViewController(controller, animated: true)
         
