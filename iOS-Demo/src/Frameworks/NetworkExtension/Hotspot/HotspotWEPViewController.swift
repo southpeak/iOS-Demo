@@ -18,6 +18,7 @@ class HotspotWEPViewController: UIViewController {
     @IBOutlet weak var ssidField: UITextField!
     @IBOutlet weak var pwdField: UITextField!
     @IBOutlet weak var button: UIButton!
+    @IBOutlet weak var button2: UIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,6 +45,12 @@ class HotspotWEPViewController: UIViewController {
             .rx
             .tap
             .bind(to: viewModel.buttonTap)
+            .disposed(by: disposeBag)
+        
+        self.button2
+            .rx
+            .tap
+            .bind(to: viewModel.buttonTap2)
             .disposed(by: disposeBag)
     }
 }

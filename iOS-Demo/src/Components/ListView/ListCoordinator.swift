@@ -11,7 +11,7 @@ import RxSwift
 
 class ListCoordinator<S: ListService>: NavigationCoordinator {
 
-    override func start() -> Observable<Void> {
+    override func start(_ dict: [String: AnyObject]? = nil) -> Observable<Void> {
         
         let controller = ListViewController(nibName: "ListViewController", bundle: nil)
         

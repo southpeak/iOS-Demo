@@ -22,7 +22,7 @@ class AppCoordinator: Coordinator {
 //        return coordinate(to: coordinator)
 //    }
     
-    override func start() -> Observable<Void> {
+    override func start(_ dict: [String: AnyObject]? = nil) -> Observable<Void> {
         let coordinator = RootCoordinator(window: _window)
         return coordinate(to: coordinator)
     }

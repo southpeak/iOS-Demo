@@ -18,19 +18,31 @@ class HotspotWEPViewModel {
     let disposeBag = DisposeBag()
     
     let buttonTap = PublishSubject<Void>()
+    let buttonTap2 = PublishSubject<Void>()
     
     init() {
         let ssidAndPwd = Observable.combineLatest(ssid.asObservable(), pwd.asObservable()) {
             ($0, $1)
         }
         
-        _ = buttonTap.asObservable()
+        buttonTap.asObservable()
             .withLatestFrom(ssidAndPwd)
             .subscribe(onNext: { (arg) in
                 print(arg)
                 
                 let configuration = NEHotspotConfiguration(ssid: arg.0, passphrase: arg.1, isWEP: false)
                 NEHotspotConfigurationManager.shared.apply(configuration, completionHandler: { e in
+                    print("\(String(describing: e))")
+                })
+            }).disposed(by: disposeBag)
+        
+        buttonTap2.asObservable()
+            .withLatestFrom(ssidAndPwd)
+            .subscribe(onNext: { (item) in
+                
+                let configuration = NEHotspotConfiguration(ssid: item.0, passphrase: item.1, isWEP: false)
+                configuration.joinOnce = true
+                NEHotspotConfigurationManager.shared.apply(configuration, completionHandler: { (e) in
                     print("\(String(describing: e))")
                 })
             }).disposed(by: disposeBag)

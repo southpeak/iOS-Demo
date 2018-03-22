@@ -11,7 +11,7 @@ import RxSwift
 
 class SafariViewCoordinator: NavigationCoordinator {
 
-    override func start() -> Observable<Void> {
+    override func start(_ dict: [String: AnyObject]? = nil) -> Observable<Void> {
         
         let controller = SafariViewController(nibName: "SafariViewController", bundle: nil)
         

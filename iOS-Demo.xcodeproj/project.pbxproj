@@ -25,6 +25,7 @@
 		E16AEA60205B6CE000ACA380 /* ListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16AEA5F205B6CE000ACA380 /* ListService.swift */; };
 		E16AEA6A205B928600ACA380 /* ValidationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16AEA69205B928600ACA380 /* ValidationService.swift */; };
 		E16AEA6C205B9B1300ACA380 /* Validatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16AEA6B205B9B1300ACA380 /* Validatable.swift */; };
+		E183FE3220637D57000FC7DE /* ThirdFrameworksService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E183FE3120637D57000FC7DE /* ThirdFrameworksService.swift */; };
 		E1C870BC205A26070029D82A /* CoordinatorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C870BB205A26070029D82A /* CoordinatorType.swift */; };
 		E1C870BD205A26450029D82A /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1C870BF205A26450029D82A /* RxCocoa.framework */; };
 		E1C870BE205A26450029D82A /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1C870C0205A26450029D82A /* RxSwift.framework */; };
@@ -95,6 +96,7 @@
 		E16AEA69205B928600ACA380 /* ValidationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationService.swift; sourceTree = "<group>"; };
 		E16AEA6B205B9B1300ACA380 /* Validatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validatable.swift; sourceTree = "<group>"; };
 		E16AEA73205BD3FF00ACA380 /* iOS-Demo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "iOS-Demo.entitlements"; sourceTree = "<group>"; };
+		E183FE3120637D57000FC7DE /* ThirdFrameworksService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdFrameworksService.swift; sourceTree = "<group>"; };
 		E1C870BB205A26070029D82A /* CoordinatorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorType.swift; sourceTree = "<group>"; };
 		E1C870BF205A26450029D82A /* RxCocoa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RxCocoa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1C870C0205A26450029D82A /* RxSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RxSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -259,6 +261,22 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
+		E183FE2F20637D2A000FC7DE /* Third */ = {
+			isa = PBXGroup;
+			children = (
+				E183FE3020637D35000FC7DE /* Moya */,
+				E183FE3120637D57000FC7DE /* ThirdFrameworksService.swift */,
+			);
+			path = Third;
+			sourceTree = "<group>";
+		};
+		E183FE3020637D35000FC7DE /* Moya */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Moya;
+			sourceTree = "<group>";
+		};
 		E1C870B9205A25AC0029D82A /* Core */ = {
 			isa = PBXGroup;
 			children = (
@@ -282,6 +300,7 @@
 		E1C870CD205A3BAF0029D82A /* src */ = {
 			isa = PBXGroup;
 			children = (
+				E183FE2F20637D2A000FC7DE /* Third */,
 				E16382C8205F7D210007D02F /* Frameworks */,
 				E16AEA5C205B6B8A00ACA380 /* Components */,
 				E1C870CF205A3BDB0029D82A /* RootCoordinator.swift */,
@@ -646,6 +665,7 @@
 				E1C870E0205A3FEB0029D82A /* ListItem.swift in Sources */,
 				E1C870D0205A3BDB0029D82A /* RootCoordinator.swift in Sources */,
 				E16AEA6A205B928600ACA380 /* ValidationService.swift in Sources */,
+				E183FE3220637D57000FC7DE /* ThirdFrameworksService.swift in Sources */,
 				E1FA6BC0206229C300577956 /* HotspotWEPViewController.swift in Sources */,
 				E1C870BC205A26070029D82A /* CoordinatorType.swift in Sources */,
 				E1FA6BC520622A2000577956 /* HotspotWEPViewModel.swift in Sources */,

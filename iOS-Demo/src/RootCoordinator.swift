@@ -17,7 +17,7 @@ class RootCoordinator: Coordinator {
         self._window = window
     }
     
-    override func start() -> Observable<Void> {
+    override func start(_ dict: [String: AnyObject]? = nil) -> Observable<Void> {
         
         let controller = ListViewController(nibName: "ListViewController", bundle: nil)
         let navigationController = UINavigationController(rootViewController: controller)

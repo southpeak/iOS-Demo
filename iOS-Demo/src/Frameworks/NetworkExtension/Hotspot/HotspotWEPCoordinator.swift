@@ -11,7 +11,7 @@ import RxSwift
 
 class HotspotWEPCoordinator: NavigationCoordinator {
     
-    override func start() -> Observable<Void> {
+    override func start(_ dict: [String: AnyObject]? = nil) -> Observable<Void> {
         
         let controller = HotspotWEPViewController(nibName: "HotspotWEPViewController", bundle: nil)
         let viewModel = HotspotWEPViewModel()

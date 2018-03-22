@@ -13,6 +13,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HotspotWEPViewController" customModule="iOS_Demo" customModuleProvider="target">
             <connections>
                 <outlet property="button" destination="2cm-N1-fr9" id="cjB-7x-5on"/>
+                <outlet property="button2" destination="KGo-pF-W68" id="2NN-2y-oGm"/>
                 <outlet property="pwdField" destination="Ha5-KG-nQi" id="Jx8-ke-5ZS"/>
                 <outlet property="ssidField" destination="Okt-dC-Agh" id="b2N-PV-ken"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -54,11 +55,17 @@
                     <rect key="frame" x="80" y="228" width="215" height="30"/>
                     <state key="normal" title="CONNECT TO THE HOTSPOT"/>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KGo-pF-W68">
+                    <rect key="frame" x="90.5" y="278" width="194" height="30"/>
+                    <state key="normal" title="CONNECT WITH JOINONCE"/>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="wJQ-Fj-dki" firstAttribute="width" secondItem="VjB-SU-l6D" secondAttribute="width" id="CIZ-Mq-SeZ"/>
                 <constraint firstItem="VjB-SU-l6D" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="50" id="DHn-ei-MNM"/>
+                <constraint firstItem="KGo-pF-W68" firstAttribute="centerX" secondItem="2cm-N1-fr9" secondAttribute="centerX" id="DYu-a0-6hB"/>
+                <constraint firstItem="KGo-pF-W68" firstAttribute="top" secondItem="2cm-N1-fr9" secondAttribute="bottom" constant="20" id="Hz5-Ty-XmE"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Okt-dC-Agh" secondAttribute="trailing" constant="50" id="KCr-eu-coN"/>
                 <constraint firstItem="wJQ-Fj-dki" firstAttribute="leading" secondItem="VjB-SU-l6D" secondAttribute="leading" id="M60-Ia-tyY"/>
                 <constraint firstItem="2cm-N1-fr9" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="80" id="NFq-qV-QwB"/>

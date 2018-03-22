@@ -13,5 +13,5 @@ public protocol CoordinatorType {
 
 //    associatedtype E
     
-    func start() -> Observable<Void>
+    func start(_ dict: [String: AnyObject]?) -> Observable<Void>
 }

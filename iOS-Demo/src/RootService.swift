@@ -17,7 +17,8 @@ class RootService: ListService {
         get {
             
             return Observable.just([
-                ListItem(title: "System Frameworks", coordinator: ListCoordinator<FrameworkService>())
+                ListItem(title: "System Frameworks", coordinator: ListCoordinator<FrameworkService>()),
+                ListItem(title: "Thrid Frameworks", coordinator: ListCoordinator<ThirdFrameworksService>())
             ])
         }
     }

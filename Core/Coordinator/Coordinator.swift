@@ -26,27 +26,21 @@ public class Coordinator: CoordinatorType {
         _children[coordinator._identifier] = nil
     }
     
-    public func coordinate(to coordinator: Coordinator) -> Observable<Void> {
+    public func coordinate(to coordinator: Coordinator, dict: [String: AnyObject]? = nil) -> Observable<Void> {
         _store(coordinator: coordinator)
         
-        return coordinator.start().do(onNext: { [weak self] _ in
+        return coordinator.start(dict).do(onNext: { [weak self] _ in
             self?._free(coordinator: coordinator)
         })
-        
-//        do {
-//            return try coordinator.start().do(onNext: { [weak self] _ in
-//                self?._free(coordinator: coordinator)
-//            })
-//        } catch let error as NSError {
-//            print("Error \(error.domain)")
-//            return nil
-//        }
     }
+    
+//    public func coordinate(to coordinator: Coordinator, )
     
 //    public func start() throws -> Observable<Void> {
 //        miAbstractMethod()
 //    }
-    public func start() -> Observable<Void> {
+    @discardableResult
+    public func start(_ dict: [String: AnyObject]? = nil) -> Observable<Void> {
         miAbstractMethod()
     }
 }
