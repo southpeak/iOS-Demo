@@ -2,7 +2,7 @@
 //  MoyaViewModel.swift
 //  iOS-Demo
 //
-//  Created by hanhui on 2018/4/7.
+//  Created by minya on 2018/4/7.
 //  Copyright © 2018年 xmu. All rights reserved.
 //
 
