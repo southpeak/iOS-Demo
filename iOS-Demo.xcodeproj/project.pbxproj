@@ -38,6 +38,14 @@
 		E1C870E0205A3FEB0029D82A /* ListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C870DF205A3FEB0029D82A /* ListItem.swift */; };
 		E1D2B3E6207888D900743A86 /* BasicService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D2B3E5207888D900743A86 /* BasicService.swift */; };
 		E1D2B3E8207897CD00743A86 /* RxService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D2B3E7207897CD00743A86 /* RxService.swift */; };
+		E1D2B3EA2078C10200743A86 /* MoyaCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D2B3E92078C10200743A86 /* MoyaCoordinator.swift */; };
+		E1D2B3ED2078C1F800743A86 /* MoyaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D2B3EB2078C1F800743A86 /* MoyaViewController.swift */; };
+		E1D2B3EE2078C1F800743A86 /* MoyaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1D2B3EC2078C1F800743A86 /* MoyaViewController.xib */; };
+		E1D2B3F12078C37100743A86 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D2B3F02078C37100743A86 /* Movie.swift */; };
+		E1D2B3F32078C51200743A86 /* MovieResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D2B3F22078C51200743A86 /* MovieResults.swift */; };
+		E1D2B3F52078C60B00743A86 /* MovieApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D2B3F42078C60B00743A86 /* MovieApi.swift */; };
+		E1D2B3F72078C6BF00743A86 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D2B3F62078C6BF00743A86 /* NetworkManager.swift */; };
+		E1D2B3F92078E5BE00743A86 /* MoyaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D2B3F82078E5BE00743A86 /* MoyaViewModel.swift */; };
 		E1F66CC52061F404004CA444 /* SafariService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F66CC42061F404004CA444 /* SafariService.swift */; };
 		E1FA6BB22061F70700577956 /* SafariViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FA6BB02061F70700577956 /* SafariViewController.swift */; };
 		E1FA6BB32061F70700577956 /* SafariViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1FA6BB12061F70700577956 /* SafariViewController.xib */; };
@@ -110,6 +118,14 @@
 		E1C870DF205A3FEB0029D82A /* ListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItem.swift; sourceTree = "<group>"; };
 		E1D2B3E5207888D900743A86 /* BasicService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicService.swift; sourceTree = "<group>"; };
 		E1D2B3E7207897CD00743A86 /* RxService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxService.swift; sourceTree = "<group>"; };
+		E1D2B3E92078C10200743A86 /* MoyaCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoyaCoordinator.swift; sourceTree = "<group>"; };
+		E1D2B3EB2078C1F800743A86 /* MoyaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoyaViewController.swift; sourceTree = "<group>"; };
+		E1D2B3EC2078C1F800743A86 /* MoyaViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MoyaViewController.xib; sourceTree = "<group>"; };
+		E1D2B3F02078C37100743A86 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		E1D2B3F22078C51200743A86 /* MovieResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieResults.swift; sourceTree = "<group>"; };
+		E1D2B3F42078C60B00743A86 /* MovieApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieApi.swift; sourceTree = "<group>"; };
+		E1D2B3F62078C6BF00743A86 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		E1D2B3F82078E5BE00743A86 /* MoyaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoyaViewModel.swift; sourceTree = "<group>"; };
 		E1F66CC42061F404004CA444 /* SafariService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariService.swift; sourceTree = "<group>"; };
 		E1FA6BB02061F70700577956 /* SafariViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariViewController.swift; sourceTree = "<group>"; };
 		E1FA6BB12061F70700577956 /* SafariViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SafariViewController.xib; sourceTree = "<group>"; };
@@ -274,6 +290,11 @@
 		E183FE3020637D35000FC7DE /* Moya */ = {
 			isa = PBXGroup;
 			children = (
+				E1D2B3EF2078C35E00743A86 /* models */,
+				E1D2B3E92078C10200743A86 /* MoyaCoordinator.swift */,
+				E1D2B3EB2078C1F800743A86 /* MoyaViewController.swift */,
+				E1D2B3EC2078C1F800743A86 /* MoyaViewController.xib */,
+				E1D2B3F82078E5BE00743A86 /* MoyaViewModel.swift */,
 			);
 			path = Moya;
 			sourceTree = "<group>";
@@ -333,6 +354,17 @@
 				E1D2B3E5207888D900743A86 /* BasicService.swift */,
 			);
 			path = Basic;
+			sourceTree = "<group>";
+		};
+		E1D2B3EF2078C35E00743A86 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				E1D2B3F02078C37100743A86 /* Movie.swift */,
+				E1D2B3F22078C51200743A86 /* MovieResults.swift */,
+				E1D2B3F42078C60B00743A86 /* MovieApi.swift */,
+				E1D2B3F62078C6BF00743A86 /* NetworkManager.swift */,
+			);
+			path = models;
 			sourceTree = "<group>";
 		};
 		E1FA6BAF2061F67A00577956 /* SafariViewController */ = {
@@ -502,6 +534,7 @@
 				E1678F87205A23E8001EFFB8 /* LaunchScreen.storyboard in Resources */,
 				E1FA6BB32061F70700577956 /* SafariViewController.xib in Resources */,
 				E1678F84205A23E8001EFFB8 /* Assets.xcassets in Resources */,
+				E1D2B3EE2078C1F800743A86 /* MoyaViewController.xib in Resources */,
 				E1FA6BC1206229C300577956 /* HotspotWEPViewController.xib in Resources */,
 				E10247B42061112E00652B24 /* ListViewController.xib in Resources */,
 				E1678F82205A23E8001EFFB8 /* Main.storyboard in Resources */,
@@ -652,28 +685,35 @@
 				E1FA6BBA20621F9000577956 /* NetworkExtensionService.swift in Sources */,
 				E10247B32061112E00652B24 /* ListViewController.swift in Sources */,
 				E1678F7F205A23E8001EFFB8 /* ViewController.swift in Sources */,
+				E1D2B3EA2078C10200743A86 /* MoyaCoordinator.swift in Sources */,
 				E1F66CC52061F404004CA444 /* SafariService.swift in Sources */,
 				E1D2B3E6207888D900743A86 /* BasicService.swift in Sources */,
 				E16AEA60205B6CE000ACA380 /* ListService.swift in Sources */,
+				E1D2B3F72078C6BF00743A86 /* NetworkManager.swift in Sources */,
+				E1D2B3ED2078C1F800743A86 /* MoyaViewController.swift in Sources */,
 				E16AEA6C205B9B1300ACA380 /* Validatable.swift in Sources */,
 				E10BAF062061406300E51765 /* FrameworkService.swift in Sources */,
 				E1678F7D205A23E8001EFFB8 /* AppDelegate.swift in Sources */,
 				E1C870C4205A34460029D82A /* Mi.swift in Sources */,
 				E1FA6BBD206225A800577956 /* HotspotConfigurationService.swift in Sources */,
+				E1D2B3F52078C60B00743A86 /* MovieApi.swift in Sources */,
 				E10247B92061148800652B24 /* ListCoordinator.swift in Sources */,
 				E1C870CC205A3B5B0029D82A /* AppCoordinator.swift in Sources */,
 				E1C870CA205A39260029D82A /* ModalCoordinator.swift in Sources */,
+				E1D2B3F12078C37100743A86 /* Movie.swift in Sources */,
 				E1FA6BC3206229EF00577956 /* HotspotWEPCoordinator.swift in Sources */,
 				E1C870C8205A38B30029D82A /* NavigationCoordinator.swift in Sources */,
 				E1C870E0205A3FEB0029D82A /* ListItem.swift in Sources */,
 				E1C870D0205A3BDB0029D82A /* RootCoordinator.swift in Sources */,
 				E1D2B3E8207897CD00743A86 /* RxService.swift in Sources */,
 				E16AEA6A205B928600ACA380 /* ValidationService.swift in Sources */,
+				E1D2B3F92078E5BE00743A86 /* MoyaViewModel.swift in Sources */,
 				E183FE3220637D57000FC7DE /* ThirdFrameworksService.swift in Sources */,
 				E1FA6BC0206229C300577956 /* HotspotWEPViewController.swift in Sources */,
 				E1C870BC205A26070029D82A /* CoordinatorType.swift in Sources */,
 				E1FA6BC520622A2000577956 /* HotspotWEPViewModel.swift in Sources */,
 				E10247B6206111B600652B24 /* ListViewModel.swift in Sources */,
+				E1D2B3F32078C51200743A86 /* MovieResults.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

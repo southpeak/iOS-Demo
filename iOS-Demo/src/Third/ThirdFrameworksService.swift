@@ -16,7 +16,7 @@ class ThirdFrameworksService: ListService {
     var items: Observable<[ListItem]> {
         get {
             return Observable.just([
-                ListItem(title: "Moya", coordinator: ListCoordinator<ThirdFrameworksService>())
+                ListItem(title: "Moya", coordinator: MoyaCoordinator())
             ])
         }
     }
