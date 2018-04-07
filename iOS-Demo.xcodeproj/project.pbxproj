@@ -36,6 +36,8 @@
 		E1C870CC205A3B5B0029D82A /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C870CB205A3B5B0029D82A /* AppCoordinator.swift */; };
 		E1C870D0205A3BDB0029D82A /* RootCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C870CF205A3BDB0029D82A /* RootCoordinator.swift */; };
 		E1C870E0205A3FEB0029D82A /* ListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C870DF205A3FEB0029D82A /* ListItem.swift */; };
+		E1D2B3E6207888D900743A86 /* BasicService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D2B3E5207888D900743A86 /* BasicService.swift */; };
+		E1D2B3E8207897CD00743A86 /* RxService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D2B3E7207897CD00743A86 /* RxService.swift */; };
 		E1F66CC52061F404004CA444 /* SafariService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F66CC42061F404004CA444 /* SafariService.swift */; };
 		E1FA6BB22061F70700577956 /* SafariViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FA6BB02061F70700577956 /* SafariViewController.swift */; };
 		E1FA6BB32061F70700577956 /* SafariViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1FA6BB12061F70700577956 /* SafariViewController.xib */; };
@@ -106,6 +108,8 @@
 		E1C870CB205A3B5B0029D82A /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		E1C870CF205A3BDB0029D82A /* RootCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootCoordinator.swift; sourceTree = "<group>"; };
 		E1C870DF205A3FEB0029D82A /* ListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItem.swift; sourceTree = "<group>"; };
+		E1D2B3E5207888D900743A86 /* BasicService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicService.swift; sourceTree = "<group>"; };
+		E1D2B3E7207897CD00743A86 /* RxService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxService.swift; sourceTree = "<group>"; };
 		E1F66CC42061F404004CA444 /* SafariService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariService.swift; sourceTree = "<group>"; };
 		E1FA6BB02061F70700577956 /* SafariViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariViewController.swift; sourceTree = "<group>"; };
 		E1FA6BB12061F70700577956 /* SafariViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SafariViewController.xib; sourceTree = "<group>"; };
@@ -297,28 +301,14 @@
 		E1C870CD205A3BAF0029D82A /* src */ = {
 			isa = PBXGroup;
 			children = (
+				E1D2B3E42078887600743A86 /* Basic */,
+				E1D2B3E32078883900743A86 /* Rx */,
 				E1D2B3BC2078656400743A86 /* Root */,
 				E183FE2F20637D2A000FC7DE /* Third */,
 				E16382C8205F7D210007D02F /* Frameworks */,
 				E16AEA5C205B6B8A00ACA380 /* Components */,
-				E1C870D8205A3E6B0029D82A /* RxCocoa */,
-				E1C870D7205A3E5F0029D82A /* RxSwift */,
 			);
 			path = src;
-			sourceTree = "<group>";
-		};
-		E1C870D7205A3E5F0029D82A /* RxSwift */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = RxSwift;
-			sourceTree = "<group>";
-		};
-		E1C870D8205A3E6B0029D82A /* RxCocoa */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = RxCocoa;
 			sourceTree = "<group>";
 		};
 		E1D2B3BC2078656400743A86 /* Root */ = {
@@ -327,6 +317,22 @@
 				E1C870CF205A3BDB0029D82A /* RootCoordinator.swift */,
 			);
 			path = Root;
+			sourceTree = "<group>";
+		};
+		E1D2B3E32078883900743A86 /* Rx */ = {
+			isa = PBXGroup;
+			children = (
+				E1D2B3E7207897CD00743A86 /* RxService.swift */,
+			);
+			path = Rx;
+			sourceTree = "<group>";
+		};
+		E1D2B3E42078887600743A86 /* Basic */ = {
+			isa = PBXGroup;
+			children = (
+				E1D2B3E5207888D900743A86 /* BasicService.swift */,
+			);
+			path = Basic;
 			sourceTree = "<group>";
 		};
 		E1FA6BAF2061F67A00577956 /* SafariViewController */ = {
@@ -647,6 +653,7 @@
 				E10247B32061112E00652B24 /* ListViewController.swift in Sources */,
 				E1678F7F205A23E8001EFFB8 /* ViewController.swift in Sources */,
 				E1F66CC52061F404004CA444 /* SafariService.swift in Sources */,
+				E1D2B3E6207888D900743A86 /* BasicService.swift in Sources */,
 				E16AEA60205B6CE000ACA380 /* ListService.swift in Sources */,
 				E16AEA6C205B9B1300ACA380 /* Validatable.swift in Sources */,
 				E10BAF062061406300E51765 /* FrameworkService.swift in Sources */,
@@ -660,6 +667,7 @@
 				E1C870C8205A38B30029D82A /* NavigationCoordinator.swift in Sources */,
 				E1C870E0205A3FEB0029D82A /* ListItem.swift in Sources */,
 				E1C870D0205A3BDB0029D82A /* RootCoordinator.swift in Sources */,
+				E1D2B3E8207897CD00743A86 /* RxService.swift in Sources */,
 				E16AEA6A205B928600ACA380 /* ValidationService.swift in Sources */,
 				E183FE3220637D57000FC7DE /* ThirdFrameworksService.swift in Sources */,
 				E1FA6BC0206229C300577956 /* HotspotWEPViewController.swift in Sources */,

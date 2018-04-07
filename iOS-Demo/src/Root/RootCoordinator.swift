@@ -23,14 +23,26 @@ class RootCoordinator: Coordinator {
         let navigationController = UINavigationController(rootViewController: tabbarController)
         
         let controller1 = ListViewController(nibName: "ListViewController", bundle: nil)
-        controller1.viewModel = create("Framework", service: FrameworkService(), navigation: navigationController)
+        controller1.viewModel = create("Basic", service: BasicService(), navigation: navigationController)
+        controller1.tabBarItem.title = "Basic"
         
         let controller2 = ListViewController(nibName: "ListViewController", bundle: nil)
-        controller2.viewModel = create("Third", service: ThirdFrameworksService(), navigation: navigationController)
+        controller2.viewModel = create("Rx", service: RxService(), navigation: navigationController)
+        controller2.tabBarItem.title = "Rx"
+        
+        let controller3 = ListViewController(nibName: "ListViewController", bundle: nil)
+        controller3.viewModel = create("Framework", service: FrameworkService(), navigation: navigationController)
+        controller3.tabBarItem.title = "Framework"
+        
+        let controller4 = ListViewController(nibName: "ListViewController", bundle: nil)
+        controller4.viewModel = create("Third", service: ThirdFrameworksService(), navigation: navigationController)
+        controller4.tabBarItem.title = "Third"
         
         tabbarController.viewControllers = [
             controller1,
-            controller2
+            controller2,
+            controller3,
+            controller4
         ]
         
         _window?.rootViewController = navigationController

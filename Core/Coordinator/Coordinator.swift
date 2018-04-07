@@ -11,8 +11,6 @@ import RxSwift
 
 public class Coordinator: CoordinatorType {
     
-//    public typealias E = ResultType
-    
     public let disposeBag = DisposeBag()
     
     private let _identifier = UUID()
@@ -34,11 +32,6 @@ public class Coordinator: CoordinatorType {
         })
     }
     
-//    public func coordinate(to coordinator: Coordinator, )
-    
-//    public func start() throws -> Observable<Void> {
-//        miAbstractMethod()
-//    }
     @discardableResult
     public func start(_ dict: [String: AnyObject]? = nil) -> Observable<Void> {
         miAbstractMethod()
