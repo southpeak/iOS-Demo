@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CodableViewController" customModule="iOS_Demo" customModuleProvider="target">
+            <connections>
+                <outlet property="button1" destination="wsE-ij-sPi" id="tsh-ES-ozZ"/>
+                <outlet property="button2" destination="GCr-dc-YYK" id="TRc-aN-Qwe"/>
+                <outlet property="button3" destination="hIn-6I-vl0" id="BTD-Yk-SxP"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wsE-ij-sPi">
+                    <rect key="frame" x="10" y="70" width="355" height="30"/>
+                    <state key="normal" title="Encode a Photo"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GCr-dc-YYK">
+                    <rect key="frame" x="10" y="133" width="355" height="30"/>
+                    <state key="normal" title="Decode from JSON"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hIn-6I-vl0">
+                    <rect key="frame" x="10" y="208" width="355" height="30"/>
+                    <state key="normal" title="Manually Encode and Decode"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="wsE-ij-sPi" secondAttribute="trailing" constant="10" id="Cv4-Qp-1b6"/>
+                <constraint firstItem="GCr-dc-YYK" firstAttribute="trailing" secondItem="wsE-ij-sPi" secondAttribute="trailing" id="Hd6-IF-fcz"/>
+                <constraint firstItem="GCr-dc-YYK" firstAttribute="leading" secondItem="wsE-ij-sPi" secondAttribute="leading" id="KjN-WG-CdQ"/>
+                <constraint firstItem="wsE-ij-sPi" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="50" id="S8B-9v-6v0"/>
+                <constraint firstItem="hIn-6I-vl0" firstAttribute="trailing" secondItem="GCr-dc-YYK" secondAttribute="trailing" id="aog-CB-xov"/>
+                <constraint firstItem="hIn-6I-vl0" firstAttribute="leading" secondItem="GCr-dc-YYK" secondAttribute="leading" id="bVX-ta-EP2"/>
+                <constraint firstItem="GCr-dc-YYK" firstAttribute="top" secondItem="wsE-ij-sPi" secondAttribute="bottom" constant="33" id="dIn-GC-E2q"/>
+                <constraint firstItem="wsE-ij-sPi" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="ePu-MO-tQF"/>
+                <constraint firstItem="hIn-6I-vl0" firstAttribute="top" secondItem="GCr-dc-YYK" secondAttribute="bottom" constant="45" id="rRR-vV-1sV"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+</document>

@@ -16,6 +16,7 @@ class FrameworkService: ListService {
     var items: Observable<[ListItem]> {
         get {
             return Observable.just([
+                ListItem(title: "Standard Libarry", coordinator: ListCoordinator<StandardLibraryService>()),
                 ListItem(title: "Safari", coordinator: ListCoordinator<SafariService>()),
                 ListItem(title: "Network Extension", coordinator: ListCoordinator<NetworkExtensionService>())
             ])
