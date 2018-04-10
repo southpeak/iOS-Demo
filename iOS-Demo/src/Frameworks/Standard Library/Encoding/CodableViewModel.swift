@@ -70,13 +70,16 @@ class CodableViewModel {
             .subscribe(onNext: {
                 let jsonString = """
                     {
-                        "latitude":"10.0",
-                        "longitude":"123.0",
-                        "additionalInfo" {
-                            "elevation": "359.0"
+                        "latitude":10.0,
+                        "longitude":123.0,
+                        "additionalInfo": {
+                            "elevation": 359.0
                         }
                     }
                     """
+//                let jsonString = """
+//                        {"additionalInfo":{"elevation":2.2000000000000002},"longitude":1.1000000000000001,"latitude":0}
+//                    """
                 if let positionData = jsonString.data(using: .utf8) {
                     let po = try? JSONDecoder().decode(Position.self, from: positionData)
                     print("\(String(describing: po?.elevation))")

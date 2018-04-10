@@ -14,6 +14,10 @@
 		E10247B6206111B600652B24 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10247B5206111B600652B24 /* ListViewModel.swift */; };
 		E10247B92061148800652B24 /* ListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10247B82061148800652B24 /* ListCoordinator.swift */; };
 		E10BAF062061406300E51765 /* FrameworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10BAF052061406300E51765 /* FrameworkService.swift */; };
+		E11258B2207C439100239187 /* NonReactiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11258B0207C439100239187 /* NonReactiveViewController.swift */; };
+		E11258B3207C439100239187 /* NonReactiveViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E11258B1207C439100239187 /* NonReactiveViewController.xib */; };
+		E11258B5207C43B900239187 /* NonReactiveCoordination.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11258B4207C43B900239187 /* NonReactiveCoordination.swift */; };
+		E11258B7207C455F00239187 /* CurrencyFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11258B6207C455F00239187 /* CurrencyFormatter.swift */; };
 		E148691120799862001DB1F9 /* StandardLibraryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E148691020799862001DB1F9 /* StandardLibraryService.swift */; };
 		E148691420799986001DB1F9 /* EncodingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E148691320799986001DB1F9 /* EncodingService.swift */; };
 		E14869162079A9B8001DB1F9 /* CodableCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14869152079A9B8001DB1F9 /* CodableCoordinator.swift */; };
@@ -95,6 +99,10 @@
 		E10247B5206111B600652B24 /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
 		E10247B82061148800652B24 /* ListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCoordinator.swift; sourceTree = "<group>"; };
 		E10BAF052061406300E51765 /* FrameworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkService.swift; sourceTree = "<group>"; };
+		E11258B0207C439100239187 /* NonReactiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NonReactiveViewController.swift; sourceTree = "<group>"; };
+		E11258B1207C439100239187 /* NonReactiveViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NonReactiveViewController.xib; sourceTree = "<group>"; };
+		E11258B4207C43B900239187 /* NonReactiveCoordination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NonReactiveCoordination.swift; sourceTree = "<group>"; };
+		E11258B6207C455F00239187 /* CurrencyFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyFormatter.swift; sourceTree = "<group>"; };
 		E148691020799862001DB1F9 /* StandardLibraryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardLibraryService.swift; sourceTree = "<group>"; };
 		E148691320799986001DB1F9 /* EncodingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncodingService.swift; sourceTree = "<group>"; };
 		E14869152079A9B8001DB1F9 /* CodableCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableCoordinator.swift; sourceTree = "<group>"; };
@@ -215,6 +223,17 @@
 				E10247B82061148800652B24 /* ListCoordinator.swift */,
 			);
 			path = ListView;
+			sourceTree = "<group>";
+		};
+		E11258AF207C431200239187 /* ReactiveAndNonReactive */ = {
+			isa = PBXGroup;
+			children = (
+				E11258B0207C439100239187 /* NonReactiveViewController.swift */,
+				E11258B1207C439100239187 /* NonReactiveViewController.xib */,
+				E11258B4207C43B900239187 /* NonReactiveCoordination.swift */,
+				E11258B6207C455F00239187 /* CurrencyFormatter.swift */,
+			);
+			path = ReactiveAndNonReactive;
 			sourceTree = "<group>";
 		};
 		E148690F20799843001DB1F9 /* Standard Library */ = {
@@ -391,6 +410,7 @@
 		E1D2B3E32078883900743A86 /* Rx */ = {
 			isa = PBXGroup;
 			children = (
+				E11258AF207C431200239187 /* ReactiveAndNonReactive */,
 				E1D2B3E7207897CD00743A86 /* RxService.swift */,
 			);
 			path = Rx;
@@ -581,6 +601,7 @@
 			files = (
 				E1678F87205A23E8001EFFB8 /* LaunchScreen.storyboard in Resources */,
 				E1FA6BB32061F70700577956 /* SafariViewController.xib in Resources */,
+				E11258B3207C439100239187 /* NonReactiveViewController.xib in Resources */,
 				E1678F84205A23E8001EFFB8 /* Assets.xcassets in Resources */,
 				E148691D2079AAC9001DB1F9 /* CodableViewController.xib in Resources */,
 				E1D2B3EE2078C1F800743A86 /* MoyaViewController.xib in Resources */,
@@ -758,9 +779,11 @@
 				E148691420799986001DB1F9 /* EncodingService.swift in Sources */,
 				E14869162079A9B8001DB1F9 /* CodableCoordinator.swift in Sources */,
 				E1C870C8205A38B30029D82A /* NavigationCoordinator.swift in Sources */,
+				E11258B2207C439100239187 /* NonReactiveViewController.swift in Sources */,
 				E1C870E0205A3FEB0029D82A /* ListItem.swift in Sources */,
 				E1C870D0205A3BDB0029D82A /* RootCoordinator.swift in Sources */,
 				E1D2B3E8207897CD00743A86 /* RxService.swift in Sources */,
+				E11258B7207C455F00239187 /* CurrencyFormatter.swift in Sources */,
 				E148691C2079AAC9001DB1F9 /* CodableViewController.swift in Sources */,
 				E16AEA6A205B928600ACA380 /* ValidationService.swift in Sources */,
 				E1D2B3F92078E5BE00743A86 /* MoyaViewModel.swift in Sources */,
@@ -770,6 +793,7 @@
 				E1FA6BC520622A2000577956 /* HotspotWEPViewModel.swift in Sources */,
 				E10247B6206111B600652B24 /* ListViewModel.swift in Sources */,
 				E1D2B3F32078C51200743A86 /* MovieResults.swift in Sources */,
+				E11258B5207C43B900239187 /* NonReactiveCoordination.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
