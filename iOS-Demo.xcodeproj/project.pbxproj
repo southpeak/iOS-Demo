@@ -38,6 +38,14 @@
 		E16AEA6A205B928600ACA380 /* ValidationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16AEA69205B928600ACA380 /* ValidationService.swift */; };
 		E16AEA6C205B9B1300ACA380 /* Validatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16AEA6B205B9B1300ACA380 /* Validatable.swift */; };
 		E183FE3220637D57000FC7DE /* ThirdFrameworksService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E183FE3120637D57000FC7DE /* ThirdFrameworksService.swift */; };
+		E1AEAFF8207EE8BB00E0F607 /* ViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1AEAFF7207EE8BB00E0F607 /* ViewModelType.swift */; };
+		E1AEAFFB207EF17C00E0F607 /* SayHelloViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1AEAFFA207EF17C00E0F607 /* SayHelloViewModel.swift */; };
+		E1AEAFFE207EF38A00E0F607 /* SayHelloViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1AEAFFC207EF38A00E0F607 /* SayHelloViewController.swift */; };
+		E1AEAFFF207EF38A00E0F607 /* SayHelloViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1AEAFFD207EF38A00E0F607 /* SayHelloViewController.xib */; };
+		E1AEB001207EF82F00E0F607 /* TextFieldCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1AEB000207EF82F00E0F607 /* TextFieldCell.xib */; };
+		E1AEB003207EF8A800E0F607 /* ButtonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1AEB002207EF8A800E0F607 /* ButtonCell.xib */; };
+		E1AEB005207EF8F900E0F607 /* GreetingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1AEB004207EF8F900E0F607 /* GreetingCell.xib */; };
+		E1AEB007207EFA0900E0F607 /* SayHelloCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1AEB006207EFA0900E0F607 /* SayHelloCoordinator.swift */; };
 		E1C870BC205A26070029D82A /* CoordinatorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C870BB205A26070029D82A /* CoordinatorType.swift */; };
 		E1C870BD205A26450029D82A /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1C870BF205A26450029D82A /* RxCocoa.framework */; };
 		E1C870BE205A26450029D82A /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1C870C0205A26450029D82A /* RxSwift.framework */; };
@@ -130,6 +138,15 @@
 		E16AEA6B205B9B1300ACA380 /* Validatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validatable.swift; sourceTree = "<group>"; };
 		E16AEA73205BD3FF00ACA380 /* iOS-Demo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "iOS-Demo.entitlements"; sourceTree = "<group>"; };
 		E183FE3120637D57000FC7DE /* ThirdFrameworksService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdFrameworksService.swift; sourceTree = "<group>"; };
+		E1AEAFF5207EE48300E0F607 /* Demo.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Demo.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		E1AEAFF7207EE8BB00E0F607 /* ViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelType.swift; sourceTree = "<group>"; };
+		E1AEAFFA207EF17C00E0F607 /* SayHelloViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SayHelloViewModel.swift; sourceTree = "<group>"; };
+		E1AEAFFC207EF38A00E0F607 /* SayHelloViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SayHelloViewController.swift; sourceTree = "<group>"; };
+		E1AEAFFD207EF38A00E0F607 /* SayHelloViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SayHelloViewController.xib; sourceTree = "<group>"; };
+		E1AEB000207EF82F00E0F607 /* TextFieldCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextFieldCell.xib; sourceTree = "<group>"; };
+		E1AEB002207EF8A800E0F607 /* ButtonCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ButtonCell.xib; sourceTree = "<group>"; };
+		E1AEB004207EF8F900E0F607 /* GreetingCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GreetingCell.xib; sourceTree = "<group>"; };
+		E1AEB006207EFA0900E0F607 /* SayHelloCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SayHelloCoordinator.swift; sourceTree = "<group>"; };
 		E1C870BB205A26070029D82A /* CoordinatorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorType.swift; sourceTree = "<group>"; };
 		E1C870BF205A26450029D82A /* RxCocoa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RxCocoa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1C870C0205A26450029D82A /* RxSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RxSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -281,6 +298,7 @@
 		E1678F70205A23E8001EFFB8 = {
 			isa = PBXGroup;
 			children = (
+				E1AEAFF5207EE48300E0F607 /* Demo.playground */,
 				E1C870B9205A25AC0029D82A /* Core */,
 				E1678F7B205A23E8001EFFB8 /* iOS-Demo */,
 				E1678F90205A23E9001EFFB8 /* iOS-DemoTests */,
@@ -366,9 +384,32 @@
 			path = Moya;
 			sourceTree = "<group>";
 		};
+		E1AEAFF6207EE8A800E0F607 /* MVVM */ = {
+			isa = PBXGroup;
+			children = (
+				E1AEAFF7207EE8BB00E0F607 /* ViewModelType.swift */,
+			);
+			path = MVVM;
+			sourceTree = "<group>";
+		};
+		E1AEAFF9207EF12B00E0F607 /* FeedViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				E1AEAFFA207EF17C00E0F607 /* SayHelloViewModel.swift */,
+				E1AEAFFC207EF38A00E0F607 /* SayHelloViewController.swift */,
+				E1AEAFFD207EF38A00E0F607 /* SayHelloViewController.xib */,
+				E1AEB000207EF82F00E0F607 /* TextFieldCell.xib */,
+				E1AEB002207EF8A800E0F607 /* ButtonCell.xib */,
+				E1AEB004207EF8F900E0F607 /* GreetingCell.xib */,
+				E1AEB006207EFA0900E0F607 /* SayHelloCoordinator.swift */,
+			);
+			path = FeedViewModels;
+			sourceTree = "<group>";
+		};
 		E1C870B9205A25AC0029D82A /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				E1AEAFF6207EE8A800E0F607 /* MVVM */,
 				E1C870BA205A25B80029D82A /* Coordinator */,
 				E1C870C3205A34460029D82A /* Mi.swift */,
 			);
@@ -410,6 +451,7 @@
 		E1D2B3E32078883900743A86 /* Rx */ = {
 			isa = PBXGroup;
 			children = (
+				E1AEAFF9207EF12B00E0F607 /* FeedViewModels */,
 				E11258AF207C431200239187 /* ReactiveAndNonReactive */,
 				E1D2B3E7207897CD00743A86 /* RxService.swift */,
 			);
@@ -600,12 +642,16 @@
 				E1678F87205A23E8001EFFB8 /* LaunchScreen.storyboard in Resources */,
 				E1FA6BB32061F70700577956 /* SafariViewController.xib in Resources */,
 				E11258B3207C439100239187 /* NonReactiveViewController.xib in Resources */,
+				E1AEB003207EF8A800E0F607 /* ButtonCell.xib in Resources */,
 				E1678F84205A23E8001EFFB8 /* Assets.xcassets in Resources */,
+				E1AEB005207EF8F900E0F607 /* GreetingCell.xib in Resources */,
 				E148691D2079AAC9001DB1F9 /* CodableViewController.xib in Resources */,
 				E1D2B3EE2078C1F800743A86 /* MoyaViewController.xib in Resources */,
 				E1FA6BC1206229C300577956 /* HotspotWEPViewController.xib in Resources */,
+				E1AEB001207EF82F00E0F607 /* TextFieldCell.xib in Resources */,
 				E10247B42061112E00652B24 /* ListViewController.xib in Resources */,
 				E1678F82205A23E8001EFFB8 /* Main.storyboard in Resources */,
+				E1AEAFFF207EF38A00E0F607 /* SayHelloViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -742,6 +788,7 @@
 				E1FA6BBD206225A800577956 /* HotspotConfigurationService.swift in Sources */,
 				E1D2B3F52078C60B00743A86 /* MovieApi.swift in Sources */,
 				E10247B92061148800652B24 /* ListCoordinator.swift in Sources */,
+				E1AEAFFE207EF38A00E0F607 /* SayHelloViewController.swift in Sources */,
 				E1C870CC205A3B5B0029D82A /* AppCoordinator.swift in Sources */,
 				E1C870CA205A39260029D82A /* ModalCoordinator.swift in Sources */,
 				E1D2B3F12078C37100743A86 /* Movie.swift in Sources */,
@@ -752,10 +799,13 @@
 				E11258B2207C439100239187 /* NonReactiveViewController.swift in Sources */,
 				E1C870E0205A3FEB0029D82A /* ListItem.swift in Sources */,
 				E1C870D0205A3BDB0029D82A /* RootCoordinator.swift in Sources */,
+				E1AEB007207EFA0900E0F607 /* SayHelloCoordinator.swift in Sources */,
 				E1D2B3E8207897CD00743A86 /* RxService.swift in Sources */,
+				E1AEAFF8207EE8BB00E0F607 /* ViewModelType.swift in Sources */,
 				E11258B7207C455F00239187 /* CurrencyFormatter.swift in Sources */,
 				E148691C2079AAC9001DB1F9 /* CodableViewController.swift in Sources */,
 				E16AEA6A205B928600ACA380 /* ValidationService.swift in Sources */,
+				E1AEAFFB207EF17C00E0F607 /* SayHelloViewModel.swift in Sources */,
 				E1D2B3F92078E5BE00743A86 /* MoyaViewModel.swift in Sources */,
 				E183FE3220637D57000FC7DE /* ThirdFrameworksService.swift in Sources */,
 				E1FA6BC0206229C300577956 /* HotspotWEPViewController.swift in Sources */,

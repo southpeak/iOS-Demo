@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="9te-lv-GZK" customClass="GreetingCell" customModule="iOS_Demo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="9te-lv-GZK" id="5Lj-BH-DOY">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p7g-rR-kFC">
+                        <rect key="frame" x="31" y="16" width="313" height="12"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottomMargin" secondItem="p7g-rR-kFC" secondAttribute="bottom" constant="5" id="VLZ-Vd-crR"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="p7g-rR-kFC" secondAttribute="trailing" constant="15" id="Yrx-vI-oic"/>
+                    <constraint firstItem="p7g-rR-kFC" firstAttribute="leading" secondItem="5Lj-BH-DOY" secondAttribute="leadingMargin" constant="15" id="uIf-2j-43O"/>
+                    <constraint firstItem="p7g-rR-kFC" firstAttribute="top" secondItem="5Lj-BH-DOY" secondAttribute="topMargin" constant="5" id="v6W-gQ-TY8"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="greetingLabel" destination="p7g-rR-kFC" id="ch5-K9-1k3"/>
+            </connections>
+            <point key="canvasLocation" x="-84" y="-29"/>
+        </tableViewCell>
+    </objects>
+</document>
