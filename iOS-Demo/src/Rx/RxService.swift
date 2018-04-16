@@ -18,6 +18,7 @@ class RxService: ListService {
             return Observable.just([
 //                ListItem(title: "RxSwift", coordinator: ListCoordinator<RxService>()),
 //                ListItem(title: "Swift", coordinator: ListCoordinator<RxService>())
+                ListItem(title: "Two Minute", coordinator: TwoMinuteCoordinator()),
                 ListItem(title: "Feed ViewModels", coordinator: SayHelloCoordinator())
             ])
         }

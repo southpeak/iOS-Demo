@@ -1,5 +1,7 @@
 PODS:
   - Alamofire (4.7.0)
+  - Konka (0.1.0):
+    - RxSwift (~> 4.0)
   - Moya/Core (11.0.1):
     - Alamofire (~> 4.1)
     - Result (~> 3.0)
@@ -19,6 +21,7 @@ PODS:
     - RxSwift (~> 4.0)
 
 DEPENDENCIES:
+  - Konka
   - Moya/RxSwift (~> 11.0)
   - Realm
   - Result (~> 3.2.4)
@@ -37,9 +40,12 @@ SPEC REPOS:
     - RxCocoa
     - RxSwift
     - RxTest
+  https://gitlab.com/tech.tiny.set/Konka.git:
+    - Konka
 
 SPEC CHECKSUMS:
   Alamofire: 907e0a98eb68cdb7f9d1f541a563d6ac5dc77b25
+  Konka: 0dc004d3e2e00bae4f1fb09d7d43dd796b3c849a
   Moya: 3d594ada51a21cc02b18739ab578a1984f900c8a
   Realm: d927fbf66df5532cfafc08afb5f7e53ded37b894
   Result: d2d07204ce72856f1fd9130bbe42c35a7b0fea10
@@ -48,6 +54,6 @@ SPEC CHECKSUMS:
   RxSwift: e49536837d9901277638493ea537394d4b55f570
   RxTest: e634f15fd2c2cd0e0120132ef7a4f7be69ad0393
 
-PODFILE CHECKSUM: 84efe2cac4efd0f5aaf17079813d314acb2da97a
+PODFILE CHECKSUM: 4a84e2bfa8d978eb5a83a3f56251842e7340706f
 
 COCOAPODS: 1.5.0

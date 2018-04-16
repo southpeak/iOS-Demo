@@ -38,6 +38,9 @@
 		E16AEA6A205B928600ACA380 /* ValidationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16AEA69205B928600ACA380 /* ValidationService.swift */; };
 		E16AEA6C205B9B1300ACA380 /* Validatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16AEA6B205B9B1300ACA380 /* Validatable.swift */; };
 		E183FE3220637D57000FC7DE /* ThirdFrameworksService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E183FE3120637D57000FC7DE /* ThirdFrameworksService.swift */; };
+		E18C584E20830ED800866734 /* TwoMinuteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18C584C20830ED800866734 /* TwoMinuteViewController.swift */; };
+		E18C584F20830ED800866734 /* TwoMinuteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E18C584D20830ED800866734 /* TwoMinuteViewController.xib */; };
+		E18C585120830F0400866734 /* TwoMinuteCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18C585020830F0400866734 /* TwoMinuteCoordinator.swift */; };
 		E1AEAFF8207EE8BB00E0F607 /* ViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1AEAFF7207EE8BB00E0F607 /* ViewModelType.swift */; };
 		E1AEAFFB207EF17C00E0F607 /* SayHelloViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1AEAFFA207EF17C00E0F607 /* SayHelloViewModel.swift */; };
 		E1AEAFFE207EF38A00E0F607 /* SayHelloViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1AEAFFC207EF38A00E0F607 /* SayHelloViewController.swift */; };
@@ -138,6 +141,9 @@
 		E16AEA6B205B9B1300ACA380 /* Validatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validatable.swift; sourceTree = "<group>"; };
 		E16AEA73205BD3FF00ACA380 /* iOS-Demo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "iOS-Demo.entitlements"; sourceTree = "<group>"; };
 		E183FE3120637D57000FC7DE /* ThirdFrameworksService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdFrameworksService.swift; sourceTree = "<group>"; };
+		E18C584C20830ED800866734 /* TwoMinuteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoMinuteViewController.swift; sourceTree = "<group>"; };
+		E18C584D20830ED800866734 /* TwoMinuteViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TwoMinuteViewController.xib; sourceTree = "<group>"; };
+		E18C585020830F0400866734 /* TwoMinuteCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoMinuteCoordinator.swift; sourceTree = "<group>"; };
 		E1AEAFF5207EE48300E0F607 /* Demo.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Demo.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		E1AEAFF7207EE8BB00E0F607 /* ViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelType.swift; sourceTree = "<group>"; };
 		E1AEAFFA207EF17C00E0F607 /* SayHelloViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SayHelloViewModel.swift; sourceTree = "<group>"; };
@@ -384,6 +390,16 @@
 			path = Moya;
 			sourceTree = "<group>";
 		};
+		E18C584B20830E9200866734 /* 2min */ = {
+			isa = PBXGroup;
+			children = (
+				E18C584C20830ED800866734 /* TwoMinuteViewController.swift */,
+				E18C584D20830ED800866734 /* TwoMinuteViewController.xib */,
+				E18C585020830F0400866734 /* TwoMinuteCoordinator.swift */,
+			);
+			path = 2min;
+			sourceTree = "<group>";
+		};
 		E1AEAFF6207EE8A800E0F607 /* MVVM */ = {
 			isa = PBXGroup;
 			children = (
@@ -451,6 +467,7 @@
 		E1D2B3E32078883900743A86 /* Rx */ = {
 			isa = PBXGroup;
 			children = (
+				E18C584B20830E9200866734 /* 2min */,
 				E1AEAFF9207EF12B00E0F607 /* FeedViewModels */,
 				E11258AF207C431200239187 /* ReactiveAndNonReactive */,
 				E1D2B3E7207897CD00743A86 /* RxService.swift */,
@@ -648,6 +665,7 @@
 				E148691D2079AAC9001DB1F9 /* CodableViewController.xib in Resources */,
 				E1D2B3EE2078C1F800743A86 /* MoyaViewController.xib in Resources */,
 				E1FA6BC1206229C300577956 /* HotspotWEPViewController.xib in Resources */,
+				E18C584F20830ED800866734 /* TwoMinuteViewController.xib in Resources */,
 				E1AEB001207EF82F00E0F607 /* TextFieldCell.xib in Resources */,
 				E10247B42061112E00652B24 /* ListViewController.xib in Resources */,
 				E1678F82205A23E8001EFFB8 /* Main.storyboard in Resources */,
@@ -720,6 +738,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-iOS-Demo/Pods-iOS-Demo-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Konka/Konka.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
@@ -729,6 +748,7 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Konka.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
@@ -775,6 +795,7 @@
 				E14869192079AA0C001DB1F9 /* Photo.swift in Sources */,
 				E1D2B3EA2078C10200743A86 /* MoyaCoordinator.swift in Sources */,
 				E1F66CC52061F404004CA444 /* SafariService.swift in Sources */,
+				E18C585120830F0400866734 /* TwoMinuteCoordinator.swift in Sources */,
 				E1D2B3E6207888D900743A86 /* BasicService.swift in Sources */,
 				E16AEA60205B6CE000ACA380 /* ListService.swift in Sources */,
 				E148691120799862001DB1F9 /* StandardLibraryService.swift in Sources */,
@@ -790,6 +811,7 @@
 				E10247B92061148800652B24 /* ListCoordinator.swift in Sources */,
 				E1AEAFFE207EF38A00E0F607 /* SayHelloViewController.swift in Sources */,
 				E1C870CC205A3B5B0029D82A /* AppCoordinator.swift in Sources */,
+				E18C584E20830ED800866734 /* TwoMinuteViewController.swift in Sources */,
 				E1C870CA205A39260029D82A /* ModalCoordinator.swift in Sources */,
 				E1D2B3F12078C37100743A86 /* Movie.swift in Sources */,
 				E1FA6BC3206229EF00577956 /* HotspotWEPCoordinator.swift in Sources */,

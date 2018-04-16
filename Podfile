@@ -1,5 +1,5 @@
-#source 'https://github.com/CocoaPods/Specs.git'
-#source 'https://gitlab.com/tech.tiny.set/Konka.git'
+source 'https://github.com/CocoaPods/Specs.git'
+source 'https://gitlab.com/tech.tiny.set/Konka.git'
 #platform :ios, '9.0'
 
 use_frameworks!
@@ -10,7 +10,7 @@ target 'iOS-Demo' do
     pod 'Moya/RxSwift', '~> 11.0'
     pod 'Result',       '~> 3.2.4'
     pod 'Realm'
-#    pod 'Konka'
+    pod 'Konka'
 end
 
 target 'iOS-DemoTests' do
